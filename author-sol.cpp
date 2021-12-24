@@ -20,7 +20,7 @@ int main() {
     int len = n * k;
     int arr[len] = {0};
     iota(arr, arr + len, 1);
-    // store segments of length n together with the segment each child wants
+    // store segments of length n together with the segment that each child wants
     // note: don't forget to mark the segments that are already stored (to avoid overlap)
     vector<int> adj[k];
     bool visited[len] = {false};
